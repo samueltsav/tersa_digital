@@ -1,0 +1,223 @@
+/** @format */
+
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../base/base" as *;
+
+.header {
+	background-image: linear-gradient(rgba($teal, 0.7), rgba($teal, 0.7)),
+		url(./images/wall.jpg);
+	width: auto;
+	background-size: cover;
+	background-position: center;
+	height: 96vh;
+	background-attachment: fixed;
+
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
+	clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+.text-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.heading {
+	&-primary {
+		color: $white;
+		text-transform: uppercase;
+
+		&-main {
+			display: block;
+			font-size: $font-xxlarge;
+			font-weight: 600;
+			letter-spacing: 1.2rem;
+
+			-webkit-animation-name: moveInLeft;
+
+			animation-name: moveInLeft;
+			-webkit-animation-duration: 3s;
+			animation-duration: 3s;
+			-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+		}
+
+		&-sub {
+			display: block;
+			font-size: $font-large;
+			font-weight: 500;
+			letter-spacing: 0.2rem;
+
+			-webkit-animation-name: moveInRight;
+
+			animation-name: moveInRight;
+			-webkit-animation-duration: 3s;
+			animation-duration: 3s;
+			-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+		}
+	}
+	&-secondary {
+		font-size: $font-xxlarge;
+		color: $teal;
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		font-weight: 400;
+
+		&:hover {
+			text-shadow: 0.5rem 1rem 2rem rgba($tealDark, 0.2);
+			transform: skewX(2deg) skew(10deg) scale(1.1);
+			transition: transform 0.3s;
+		}
+
+		&-partners {
+			color: $teal;
+		}
+	}
+
+	&-tertiary {
+		font-size: $font-xlarge;
+		text-transform: capitalize;
+		color: $white;
+		font-weight: 400;
+
+		&-solutions {
+			color: $teal;
+			font-size: $font-xlarge;
+			font-weight: 400;
+			text-align: center;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+@-webkit-keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-12rem);
+	}
+
+	80% {
+		transform: translateX(1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-12rem);
+	}
+
+	80% {
+		transform: translateX(1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(12rem);
+	}
+
+	80% {
+		transform: translateX(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(12rem);
+	}
+
+	80% {
+		transform: translateX(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+.features {
+	padding: 2rem;
+	&-icon {
+		display: block;
+		border-radius: 1rem;
+		margin-top: 4rem;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+
+	&-text {
+		padding: 0 1rem;
+		text-align: justify;
+
+		&-paragragh {
+			max-width: 60%;
+			text-align: justify;
+		}
+
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+}
+
+.solutions {
+	padding: 0.5rem 4rem;
+
+	&-box {
+		background-color: $white;
+		padding: 2.5rem;
+		margin-top: 1rem;
+		font-size: $font-medium;
+		word-spacing: 0.2rem;
+		text-align: justify;
+		border-radius: 0.3rem;
+		box-shadow: $box-shadow;
+		transition: transform 0.3s;
+		line-height: 1.7;
+
+		-webkit-transition: transform 0.3s;
+		-moz-transition: transform 0.3s;
+		-ms-transition: transform 0.3s;
+		-o-transition: transform 0.3s;
+
+		&:hover {
+			transform: translateY(-1rem) scale(1);
+		}
+	}
+}
+
+.partners {
+	padding: 1rem 4rem;
+}
