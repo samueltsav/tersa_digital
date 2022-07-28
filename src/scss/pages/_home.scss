@@ -4,6 +4,7 @@
 @use "../abstracts/variables" as *;
 @use "../base/base" as *;
 
+/* SECTION HEADER */
 .header {
 	background-image: linear-gradient(rgba($teal, 0.7), rgba($teal, 0.7)),
 		url(./images/wall.jpg);
@@ -12,21 +13,20 @@
 	background-position: center;
 	height: 96vh;
 	background-attachment: fixed;
-
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 
 	clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 
-.text-box {
+.text_box {
 	position: absolute;
 	top: 40%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -40%);
 }
 
 .heading {
-	&-primary {
+	&_primary {
 		color: $white;
 		text-transform: uppercase;
 
@@ -64,7 +64,7 @@
 			animation-timing-function: ease-out;
 		}
 	}
-	&-secondary {
+	&_secondary {
 		font-size: $font-xxlarge;
 		color: $teal;
 		text-transform: uppercase;
@@ -84,7 +84,7 @@
 		}
 	}
 
-	&-tertiary {
+	&_tertiary {
 		font-size: $font-xlarge;
 		text-transform: capitalize;
 		color: $white;
@@ -164,38 +164,42 @@
 	}
 }
 
+/* SECTION FEATURES */
 .features {
 	padding: 2rem;
-	&-icon {
+
+	&_icon {
+		position: relative;
+		top: 0%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		height: 15rem;
+		width: 15rem;
 		display: block;
 		border-radius: 1rem;
 		margin-top: 4rem;
-		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, 0%);
 	}
 
-	&-text {
+	&_text {
 		padding: 0 1rem;
 		text-align: justify;
 
 		&-paragragh {
 			max-width: 60%;
 			text-align: justify;
+			position: relative;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%, 0%);
 		}
-
-		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, 0%);
 	}
 }
 
+/* SECTION SOLUTIONS */
 .solutions {
 	padding: 0.5rem 4rem;
 
-	&-box {
+	&_box {
 		background-color: $white;
 		padding: 2.5rem;
 		margin-top: 1rem;
@@ -205,8 +209,6 @@
 		border-radius: 0.3rem;
 		box-shadow: $box-shadow;
 		transition: transform 0.3s;
-		line-height: 1.7;
-
 		-webkit-transition: transform 0.3s;
 		-moz-transition: transform 0.3s;
 		-ms-transition: transform 0.3s;
@@ -218,6 +220,7 @@
 	}
 }
 
+/* SECTION PARTNEERS */
 .partners {
 	padding: 1rem 4rem;
 }

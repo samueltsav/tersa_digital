@@ -9,20 +9,24 @@
 	padding: 2rem;
 	background-color: $darkGray;
 	color: $darkWhite;
-}
 
-.link {
-	color: $darkWhite;
-	text-decoration: none;
-
-	& li {
-		display: block;
+	&_heading {
 		text-transform: capitalize;
 	}
 
-	& li:hover {
-		color: $tealDark;
-		transition: all 0.2s;
+	&_link {
+		color: $darkWhite;
+		text-decoration: none;
+
+		& li {
+			display: block;
+			text-transform: capitalize;
+		}
+
+		& li:hover {
+			color: $tealDark;
+			transition: all 0.2s;
+		}
 	}
 }
 

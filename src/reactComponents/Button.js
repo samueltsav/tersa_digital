@@ -7,7 +7,7 @@ function Button() {
 	return (
 		<>
 			<div className="btn_primary">
-				<Link to="/" className="btn-link">
+				<Link to="/" className="btn_link">
 					<button className="btn_primary-full">enquire</button>
 					<button className="btn_primary-ghost">sign up</button>
 				</Link>

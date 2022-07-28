@@ -7,15 +7,15 @@ function Solutions() {
 	return (
 		<>
 			<section className="solutions">
-				<h2 className="heading-secondary">our solutions for your business</h2>
+				<h2 className="heading_secondary">our solutions for your business</h2>
 
 				<div className="row">
 					<div className="col-1-of-3">
-						<div className="solutions-box">
-							<h3 className="heading-tertiary heading-tertiary-solutions">
+						<div className="solutions_box">
+							<h3 className="heading_tertiary heading_tertiary-solutions">
 								fountain basic
 							</h3>
-							<p className="solutions-box-text">
+							<p className="solutions_box-text">
 								Lobortis, consectetuer integer felis ridiculus nisl porttitor
 								bibendum placerat fringilla duis quisque conubia ad. Conubia at.
 								Tempor. Dolor rutrum odio sit nullam convallis. Urna vehicula
@@ -29,8 +29,8 @@ function Solutions() {
 								lacus, luctus morbi Metus a ullamcorper. Turpis suspendisse
 								libero scelerisque risus iaculis velit pharetra nisl dignissim.
 							</p>
-							<div className="solutions-btn">
-								<Link to="/">
+							<div className="solutions_btn">
+								<Link to="/" className="btn_link">
 									<button className="btn_secondary btn_secondary-solutions">
 										sign up now
 									</button>
@@ -39,11 +39,11 @@ function Solutions() {
 						</div>
 					</div>
 					<div className="col-1-of-3">
-						<div className="solutions-box">
-							<h3 className="heading-tertiary heading-tertiary-solutions">
+						<div className="solutions_box">
+							<h3 className="heading_tertiary heading_tertiary-solutions">
 								fountain advanced
 							</h3>
-							<p className="solutions-box-text">
+							<p className="solutions_box-text">
 								Lobortis, consectetuer integer felis ridiculus nisl porttitor
 								bibendum placerat fringilla duis quisque conubia ad. Conubia at.
 								Tempor. Dolor rutrum odio sit nullam convallis. Urna vehicula
@@ -57,7 +57,7 @@ function Solutions() {
 								lacus, luctus morbi Metus a ullamcorper. Turpis suspendisse
 								libero scelerisque risus iaculis velit pharetra nisl dignissim.
 							</p>
-							<div className="solutions-btn">
+							<div className="solutions_btn">
 								<Link to="/">
 									<button className="btn_secondary btn_secondary-solutions">
 										sign up now
@@ -67,11 +67,11 @@ function Solutions() {
 						</div>
 					</div>
 					<div className="col-1-of-3">
-						<div className="solutions-box">
-							<h3 className="heading-tertiary heading-tertiary-solutions">
+						<div className="solutions_box">
+							<h3 className="heading_tertiary heading_tertiary-solutions">
 								fountain premium
 							</h3>
-							<p className="solutions-box-text">
+							<p className="solutions_box-text">
 								Lobortis, consectetuer integer felis ridiculus nisl porttitor
 								bibendum placerat fringilla duis quisque conubia ad. Conubia at.
 								Tempor. Dolor rutrum odio sit nullam convallis. Urna vehicula
@@ -85,7 +85,7 @@ function Solutions() {
 								lacus, luctus morbi Metus a ullamcorper. Turpis suspendisse
 								libero scelerisque risus iaculis velit pharetra nisl dignissim.
 							</p>
-							<div className="solutions-btn">
+							<div className="solutions_btn">
 								<Link to="/">
 									<button className="btn_secondary btn_secondary-solutions">
 										sign up now

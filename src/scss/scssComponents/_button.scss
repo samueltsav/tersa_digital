@@ -5,8 +5,9 @@
 @use "../base/base" as *;
 
 .btn {
-	&-link {
+	&_link {
 		text-decoration: none;
+		
 	}
 
 	&_primary {
@@ -16,11 +17,10 @@
 		transform: translate(-50%, 10%);
 
 		&-full {
-			text-decoration: none;
+			text-transform: capitalize;
 			display: block;
 			font-size: $font-large;
 			text-align: center;
-			text-transform: capitalize;
 			border-radius: $btn-border-radius;
 			padding: $btn-padding;
 			font-weight: $btn-font-weight;
@@ -48,7 +48,6 @@
 		}
 
 		&-ghost {
-			text-decoration: none;
 			display: block;
 			font-size: $font-large;
 			text-align: center;
@@ -116,10 +115,9 @@
 
 .btn_secondary {
 	&,
-	&:link,
 	&:visited {
+		text-transform: capitalize;
 		position: relative;
-		text-decoration: none;
 		padding: $btn-padding;
 		font-weight: $btn-font-weight;
 		display: inline-block;
