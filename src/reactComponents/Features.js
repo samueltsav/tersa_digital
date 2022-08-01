@@ -5,14 +5,15 @@ import cbt from "../images/cbt.png";
 import studying from "../images/student_studying.jpg";
 import attendance from "../images/attendance_register.png";
 import school from "../images/school.jpg";
-import clock from "../images/clock.jpg";
+import clock from "../images/clock.jpg"; 
+
 
 function Features() {
 	return (
 		<>
 			<section className="features">
-				<h2 className="heading_secondary">our core features</h2>
 				<div className="row">
+					<h2 className="heading_secondary">our core features</h2>
 					<div className="col-1-of-3">
 						<img src={cbt} className="features_icon" alt="cbt-icon" />
 					</div>

@@ -7,14 +7,17 @@ import Solutions from "../reactComponents/Solutions";
 import Partners from "../reactComponents/Partners";
 import Footer from "../reactComponents/Footer";
 
+
 function Home() {
 	return (
 		<>
-			{<Header />}
-			{<Features />}
-			{<Solutions />}
-			{<Partners />}
-			{<Footer />}
+			<div>
+				{<Header />}
+				{<Features />}
+				{<Solutions />}
+				{<Partners />}
+				{<Footer />}
+			</div>
 		</>
 	);
 }

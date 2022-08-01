@@ -2,14 +2,14 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import ButtonSecondary from "./ButtonSecondary"
 
 function Solutions() {
 	return (
 		<>
 			<section className="solutions">
-				<h2 className="heading_secondary">our solutions for your business</h2>
-
 				<div className="row">
+					<h2 className="heading_secondary">our solutions are topnotch</h2>
 					<div className="col-1-of-3">
 						<div className="solutions_box">
 							<h3 className="heading_tertiary heading_tertiary-solutions">
@@ -29,11 +29,9 @@ function Solutions() {
 								lacus, luctus morbi Metus a ullamcorper. Turpis suspendisse
 								libero scelerisque risus iaculis velit pharetra nisl dignissim.
 							</p>
-							<div className="solutions_btn">
-								<Link to="/" className="btn_link">
-									<button className="btn_secondary btn_secondary-solutions">
-										sign up now
-									</button>
+							<div className="btn">
+								<Link to="SignUp" className="btn_link">
+									{<ButtonSecondary btn_name="Sign Up" />}
 								</Link>
 							</div>
 						</div>
@@ -57,12 +55,12 @@ function Solutions() {
 								lacus, luctus morbi Metus a ullamcorper. Turpis suspendisse
 								libero scelerisque risus iaculis velit pharetra nisl dignissim.
 							</p>
-							<div className="solutions_btn">
-								<Link to="/">
-									<button className="btn_secondary btn_secondary-solutions">
-										sign up now
-									</button>
-								</Link>
+							<div className="btn">
+								<div className="btn">
+									<Link to="SignUp" className="btn_link">
+										{<ButtonSecondary btn_name="Sign Up" />}
+									</Link>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -85,12 +83,12 @@ function Solutions() {
 								lacus, luctus morbi Metus a ullamcorper. Turpis suspendisse
 								libero scelerisque risus iaculis velit pharetra nisl dignissim.
 							</p>
-							<div className="solutions_btn">
-								<Link to="/">
-									<button className="btn_secondary btn_secondary-solutions">
-										sign up now
-									</button>
-								</Link>
+							<div className="btn">
+								<div className="btn">
+									<Link to="SignUp" className="btn_link">
+										{<ButtonSecondary btn_name="Sign Up" />}
+									</Link>
+								</div>
 							</div>
 						</div>
 					</div>

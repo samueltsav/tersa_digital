@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import PartnersLogo from "./PartnersLogo";
 import etisalat from "../images/9mobile_logo.png";
 import mtn from "../images/mtn_logo.png";
 import glo from "../images/glo_logo.jpg";
@@ -10,26 +11,12 @@ function Partners() {
 	return (
 		<>
 			<section className="partners">
-				<h2 className="heading_secondary heading_secondary-partners">
-					our partners
-				</h2>
 				<div className="row">
-					<div className="col-1-of-4">
-						<img src={etisalat} className="partners_logo" alt="9mobile-logo" />
-					</div>
-					<div className="col-1-of-4">
-						<img src={mtn} className="partners_logo" alt="9mobile-logo" />
-					</div>
-					<div className="col-1-of-4">
-						<img src={glo} className="partners_logo" alt="9mobile-logo" />
-					</div>
-					<div className="col-1-of-4">
-						<img
-							src={interswitch}
-							className="partners_logo"
-							alt="9mobile-logo"
-						/>
-					</div>
+					<h2 className="heading_secondary">our global partners</h2>
+					{<PartnersLogo name={etisalat} alt="9mobile_logo" />}
+					{<PartnersLogo name={mtn} alt="mtn_logo" />}
+					{<PartnersLogo name={glo} alt="glo_logo" />}
+					{<PartnersLogo name={interswitch} alt="interswitch_logo" />}
 				</div>
 			</section>
 		</>

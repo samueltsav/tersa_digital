@@ -2,8 +2,12 @@
 @forward "./abstracts/mixins";
 @forward "./base/base";
 @forward "./layout/grid";
+@forward "./layout/typography";
 @forward "./scssComponents/navbar";
 @forward "./scssComponents/button";
 @forward "./scssComponents/partners";
 @forward "./scssComponents/footer";
+@forward "./scssComponents/form";
 @forward "./pages/home";
+@forward "./pages/signUp";
+@forward "./pages/contact";

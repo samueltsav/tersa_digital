@@ -22,7 +22,7 @@ function Footer() {
 							<Link to="/" className="footer_link">
 								<li>resources</li>
 							</Link>
-							<Link to="/" className="footer_link">
+							<Link to="/Contact" className="footer_link">
 								<li>contact us</li>
 							</Link>
 						</ul>

@@ -2,8 +2,12 @@
 @use "./abstracts/mixins";
 @use "./base/base";
 @use "./layout/grid";
+@use "./layout/typography";
 @use "./scssComponents/navbar";
 @use "./scssComponents/button";
 @use "./scssComponents/partners";
 @use "./scssComponents/footer";
+@use "./scssComponents/form";
 @use "./pages/home";
+@use "./pages/signUp";
+@use "./pages/contact";

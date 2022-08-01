@@ -35,7 +35,7 @@ function Navbar() {
 						</Link>
 					</li>
 					<li className="nav-item nav-item_btn">
-						<Link to="/" className="nav-link nav-link_btn">
+						<Link to="/SignUp" className="nav-link nav-link_btn">
 							sign up
 						</Link>
 					</li>
